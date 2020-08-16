@@ -391,9 +391,38 @@
              <svg class="btn-close" >
                  <use href="./img/symbol-defs-cross.svg#icon-cross-opt"></use>
              </svg>
-         </button>   
+         </button>
+         <!-- <b class="call-make-act">Оставьте свои данные, мы вам перезвоним</b> -->
+         <form class="form js-speaker-form">
+            <b class="call-make-act">Оставьте свои данные, мы вам перезвоним</b>
+         <div class="form-filed">
+            <label for="name" class="form-label">Имя</label>
+            <input type="text" name="name" id="name" class="form-input" autofocus>
+         </div>
+
+          <div class="form-filed">
+             <label for="tel">Телефон</label>
+             <input type="tel" name="tel" id="tel">
+          </div>
+           <div  class="form-filed">
+             <label for="email">Почта</label>
+             <input type="email" name="mail" id="email">
+           </div>
+            <div class="form-filed"> 
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" id="comment"  rows="10" placeholder="Введите текст"></textarea>
+            </div>
+           <div>
+            <input type="checkbox" id="policy" >
+            <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора </label>
+           </div>
+
+          <button type="submit">Оставить заяву</button>   
+         </form>   
         </div>
     </div>
 <script src="./js/modal.js"></script>
+<script src="./js-new/modal.new.js">
+</script>
 </body>
 </html>
