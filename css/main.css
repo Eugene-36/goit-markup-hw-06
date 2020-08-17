@@ -570,11 +570,17 @@ margin-right: 10px;
 }
 .common{
 margin-right: 69px;
+display: block;
+margin: 0px;
 } 
+.common:not(:last-child) {
+  margin-right: 30px;
+}
 .button.primary{
 padding-top: 10px;
+padding-right: 29px;
 padding-left: 29px;
-padding-right: 62px;
+display: flex;
     
 border: 1px solid transparent;
 color: var(--white-color);
@@ -594,10 +600,33 @@ line-height: 1.7;
 letter-spacing: 0.03em;
 }
 .call-to-act{  
-color: #FFFFFF;      
+margin-bottom: 20px;       
 font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
+color: #FFFFFF; 
+}
+.comment-footer{
+width: 358px;
+height: 50px;
+margin-right: 12px;
+
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background: #2F303A;
+color: white;
+}
+.separation{
+  display: flex;
+}
+.button::after{
+content: "";
+margin-left: 10px;
+width: 24px;
+height: 24px;
+background-image: url(../img/telegram.svg);
 }
 .style-inst, 
 .style-twit, 
@@ -705,16 +734,51 @@ color: #757575;
 }
 
 .form-filed input::placeholder{
-  content: "";
-  line-height: 1.1px;
-  color: red;
+content: "";
+line-height: 1.1px;
+color: red;
 }
 .call-make-act{
 font-weight: bold;
 font-size: 20px;
 letter-spacing: 0.03em;
-/* display: flex;
-justify-content: center; */
 line-height: 1.15px;
 color:  #212121;
+}
+.super-puoer{
+justify-content: center;
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+width: 448px;
+}
+textarea{
+  resize: none;
+}
+.topic-action{
+  display: inline-flex;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.topic-action label{
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+
+color: #757575;
+}
+.topic-action li{
+ display: inline-flex;
+ align-items: center; 
+}
+.topic-action input[type='checkbox']{
+  margin-right: 7px;
+}
+.comment{
+padding: 12px 16px;
+height: 120px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
 }
