@@ -756,11 +756,11 @@ textarea{
   resize: none;
 }
 .topic-action{
-  display: inline-flex;
+display: inline-flex;
 
-  list-style: none;
-  padding: 0;
-  margin: 0;
+list-style: none;
+padding: 0;
+margin: 0;
 }
 .topic-action label{
 font-size: 14px;
