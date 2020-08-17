@@ -97,7 +97,10 @@ font-weight: bold;
 color: var(--head-color);
 }
 /* Флекс для навигации */
-
+.page-header{
+ width: auto;
+ border: 1px solid #ECECEC; 
+}
 .site-nav{
 display: flex;
 }

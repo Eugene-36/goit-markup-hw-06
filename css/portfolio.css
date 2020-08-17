@@ -99,6 +99,10 @@ font-size: 14px;
 line-height: 1.14;
 }
 /* Позиционирование для навигации */
+.page-header{
+width: auto;    
+border-bottom: 1px solid #ECECEC;    
+}
 .site-nav{
 display: flex;
 }
