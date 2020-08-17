@@ -409,16 +409,19 @@ margin-right: 10px;
 }
 .common{
 align-items: center;
-margin-right: 69px;
 } 
+.common:not(:last-child){
+ margin-right: 20px;   
+}
 .button{
 color:var(--white-color);
 background-color: var(--accent-color);
 }
 .button.primary{
+display: flex;    
 padding-top: 10px;
 padding-left: 29px;
-padding-right: 62px;
+padding-right: 29px;
 border-radius: 4px;
 border: 1px solid transparent;
 
@@ -430,11 +433,36 @@ background-color: var(--accent-color);
 font-weight: bold;
 }
 .call-to-act{
-color: #FFFFFF;
+display: block;
+margin-bottom: 20px; 
 font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
+color: #FFFFFF;
 }
+.comment-footer{
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    resize: none;
+    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+    color: white;
+    }
+    .separation{
+      display: flex;
+    }
+    .button::after{
+    content: "";
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/telegram.svg);
+    }
 .style-inst, 
 .style-twit, 
 .style-face, 
